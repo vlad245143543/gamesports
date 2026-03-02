@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Личный кабинет BestGames">
+    <title>BestGames - Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="BestGames" width="200" height="60">
+            </a>
+
+            <div class="theme-switcher">
+                <a href="index.html" class="theme-btn">🌙 Темная</a>
+                <a href="themes/light-theme.html" class="theme-btn">☀️ Светлая</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#search" class="nav__link">Поиск</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог игр</a></li>
+                    <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+                    <li><a href="auth/login.html" class="nav__link nav__link--btn">Войти</a></li>
+                    <li><a href="auth/register.html" class="nav__link nav__link--btn">Регистрация</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="index.html#search" class="mobile-menu__link">Поиск</a></li>
+            <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог игр</a></li>
+            <li class="mobile-menu__item"><a href="profile.html" class="mobile-menu__link">Личный кабинет</a></li>
+            <li class="mobile-menu__item"><a href="auth/login.html" class="mobile-menu__link mobile-menu__link--btn">Войти</a></li>
+            <li class="mobile-menu__item"><a href="auth/register.html" class="mobile-menu__link mobile-menu__link--btn">Регистрация</a></li>
+        </ul>
+    </div>
+
+    <main class="profile-page container">
+        <div class="profile-header">
+            <h1 class="section-title">Личный кабинет</h1>
+        </div>
+
+        <!-- Информация о пользователе -->
+        <section class="profile-section">
+            <h3>👤 Информация о пользователе</h3>
+            <div class="profile-info">
+                <div class="profile-avatar">ИИ</div>
+                <div class="profile-details">
+                    <h2>Иванов Иван Иванович</h2>
+                    <p><strong>Email:</strong> ivan.ivanov@mail.ru</p>
+                    <p><strong>Дата рождения:</strong> 15.05.1995 (29 лет)</p>
+                    <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                    <p><strong>На сайте с:</strong> 10.01.2023</p>
+                    <p><strong>Бонусный баланс:</strong> 1 250 баллов</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section class="profile-section">
+            <h3>📊 Статистика</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: var(--color-bg-card); padding: 25px; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--color-accent);">24</div>
+                    <div>Всего покупок</div>
+                </div>
+                <div style="background: var(--color-bg-card); padding: 25px; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--color-accent);">47 890 ₽</div>
+                    <div>Потрачено всего</div>
+                </div>
+                <div style="background: var(--color-bg-card); padding: 25px; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--color-accent);">8</div>
+                    <div>Игр в библиотеке</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История покупок -->
+        <section class="profile-section">
+            <h3>📜 История покупок</h3>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Дата покупки</th>
+                        <th>Название игры</th>
+                        <th>Тип</th>
+                        <th>Стоимость</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15.03.2024</td>
+                        <td>The Witcher 3: Wild Hunt</td>
+                        <td>Игра</td>
+                        <td>1 999 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                    <tr>
+                        <td>10.02.2024</td>
+                        <td>Cyberpunk 2077 + Phantom Liberty</td>
+                        <td>Игра + DLC</td>
+                        <td>3 499 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                    <tr>
+                        <td>25.01.2024</td>
+                        <td>Hogwarts Legacy - Deluxe Edition</td>
+                        <td>Игра</td>
+                        <td>3 999 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                    <tr>
+                        <td>05.01.2024</td>
+                        <td>Starfield - Premium Edition</td>
+                        <td>Игра</td>
+                        <td>5 499 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                    <tr>
+                        <td>20.12.2023</td>
+                        <td>1000 V-Bucks (Fortnite)</td>
+                        <td>Внутриигровые предметы</td>
+                        <td>499 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                    <tr>
+                        <td>10.12.2023</td>
+                        <td>Diablo IV - Battle Pass</td>
+                        <td>Внутриигровые предметы</td>
+                        <td>999 ₽</td>
+                        <td style="color: var(--color-success);">✅ Выполнено</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Настройки профиля -->
+        <section class="profile-section">
+            <h3>⚙️ Настройки профиля</h3>
+            <div class="profile-settings">
+                <div>
+                    <h4>Безопасность</h4>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#" class="btn btn--outline">Сменить пароль</a>
+                        <a href="#" class="btn btn--outline">Двухфакторная аутентификация</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Уведомления</h4>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span>Получать новости на email</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span>Уведомления о скидках</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>SMS-уведомления</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h4>Тема оформления</h4>
+                    <div class="theme-switch" style="display: flex; gap: 15px;">
+                        <a href="index.html" class="btn btn--outline">Темная</a>
+                        <a href="themes/light-theme.html" class="btn btn--outline">Светлая</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Язык</h4>
+                    <select class="form-control" style="width: auto;">
+                        <option>Русский</option>
+                        <option>English</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Выход -->
+        <section style="text-align: center; margin-top: 50px;">
+            <a href="index.html" class="btn btn--danger" style="background-color: var(--color-danger); color: white; padding: 15px 40px;">Выйти из аккаунта</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <p>📞 Телефон: 8-800-999-55-99</p>
+                    <p>✉️ Email: best@games.ru</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="auth/register.html">Регистрация</a></li>
+                        <li><a href="auth/login.html">Авторизация</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 BestGames. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

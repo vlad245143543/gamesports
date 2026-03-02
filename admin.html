@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Административная панель BestGames">
+    <title>BestGames - Админ панель</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="BestGames" width="200" height="60">
+            </a>
+
+            <div class="theme-switcher">
+                <a href="index.html" class="theme-btn">🌙 Темная</a>
+                <a href="themes/light-theme.html" class="theme-btn">☀️ Светлая</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#search" class="nav__link">Поиск</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог игр</a></li>
+                    <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+                    <li><a href="auth/login.html" class="nav__link nav__link--btn">Войти</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="index.html#search" class="mobile-menu__link">Поиск</a></li>
+            <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог игр</a></li>
+            <li class="mobile-menu__item"><a href="profile.html" class="mobile-menu__link">Личный кабинет</a></li>
+            <li class="mobile-menu__item"><a href="auth/login.html" class="mobile-menu__link mobile-menu__link--btn">Войти</a></li>
+        </ul>
+    </div>
+
+    <main class="admin-page container">
+        <div class="admin-container">
+            <div class="admin-header">
+                <h1 class="text-gradient">Административная панель</h1>
+                <p>Добавление новой игры в каталог</p>
+            </div>
+
+            <form class="admin-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="game-title">Название игры *</label>
+                    <input type="text" id="game-title" class="form-control" placeholder="Введите название игры" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="game-genre">Жанр *</label>
+                    <select id="game-genre" class="form-control" required>
+                        <option value="">Выберите жанр</option>
+                        <option value="rpg">RPG</option>
+                        <option value="shooter">Шутер</option>
+                        <option value="strategy">Стратегия</option>
+                        <option value="racing">Гонки</option>
+                        <option value="adventure">Приключения</option>
+                        <option value="sport">Спорт</option>
+                        <option value="horror">Хоррор</option>
+                        <option value="simulator">Симулятор</option>
+                        <option value="m

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="BestGames - маркетплейс компьютерных игр. Покупай игры по выгодным ценам!">
+    <meta name="keywords" content="игры, маркетплейс, купить игры, cyberpunk, witcher, steam">
+    <meta name="author" content="BestGames">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="BestGames - Лучший маркетплейс игр">
+    <meta property="og:description" content="Тысячи игр по выгодным ценам">
+    <meta property="og:image" content="https://bestgames.ru/og-image.jpg">
+    <meta property="og:url" content="https://bestgames.ru">
+    
+    <title>BestGames - Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Логотип -->
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="BestGames" width="200" height="60">
+            </a>
+
+            <!-- Переключатель темы (виден на десктопе) -->
+            <div class="theme-switcher">
+                <a href="index.html" class="theme-btn active">🌙 Темная</a>
+                <a href="themes/light-theme.html" class="theme-btn">☀️ Светлая</a>
+            </div>
+
+            <!-- Десктопная навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#search" class="nav__link">Поиск</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог игр</a></li>
+                    <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+                    <li><a href="auth/login.html" class="nav__link nav__link--btn">Войти</a></li>
+                    <li><a href="auth/register.html" class="nav__link nav__link--btn">Регистрация</a></li>
+                </ul>
+            </nav>
+
+            <!-- Бургер-меню -->
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#search" class="mobile-menu__link">Поиск</a></li>
+            <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог игр</a></li>
+            <li class="mobile-menu__item"><a href="profile.html" class="mobile-menu__link">Личный кабинет</a></li>
+            <li class="mobile-menu__item"><a href="auth/login.html" class="mobile-menu__link mobile-menu__link--btn">Войти</a></li>
+            <li class="mobile-menu__item"><a href="auth/register.html" class="mobile-menu__link mobile-menu__link--btn">Регистрация</a></li>
+            <li class="mobile-menu__item">
+                <div class="theme-switcher" style="margin-top: 20px;">
+                    <a href="index.html" class="theme-btn active">🌙 Темная</a>
+                    <a href="themes/light-theme.html" class="theme-btn">☀️ Светлая</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Слайдер с новинками -->
+        <section class="slider container">
+            <h2 class="section-title fade-in">Новинки игр</h2>
+            <div class="slider__wrapper">
+                <!-- Слайд 1 -->
+                <article class="slider__slide fade-in">
+                    <span class="game-card__badge">НОВИНКА</span>
+                    <img src="images/slider/slide1.jpg" alt="Cyberpunk 2077" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Cyberpunk 2077: Phantom Liberty</h3>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2499 ₽</span>
+                            <span class="game-card__old-price">3499 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn--primary game-card__link">Подробнее</a>
+                    </div>
+                </article>
+                <!-- Слайд 2 -->
+                <article class="slider__slide fade-in">
+                    <span class="game-card__badge">ХИТ</span>
+                    <img src="images/slider/slide2.jpg" alt="Starfield" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Starfield: Shattered Space</h3>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">3999 ₽</span>
+                            <span class="game-card__old-price">4999 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn--primary game-card__link">Подробнее</a>
+                    </div>
+                </article>
+                <!-- Слайд 3 -->
+                <article class="slider__slide fade-in">
+                    <span class="game-card__badge">ПРЕДЗАКАЗ</span>
+                    <img src="images/slider/slide3.jpg" alt="Hogwarts Legacy" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Hogwarts Legacy 2</h3>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2999 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn--primary game-card__link">Подробнее</a>
+                    </div>
+                </article>
+                <!-- Слайд 4 -->
+                <article class="slider__slide fade-in">
+                    <span class="game-card__badge">СКИДКА</span>
+                    <img src="images/slider/slide4.jpg" alt="Diablo IV" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Diablo IV: Vessel of Hatred</h3>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2799 ₽</span>
+                            <span class="game-card__old-price">3499 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn--primary game-card__link">Подробнее</a>
+                    </div>
+                </article>
+                <!-- Слайд 5 -->
+                <article class="slider__slide fade-in">
+                    <span class="game-card__badge">ЭКСКЛЮЗИВ</span>
+                    <img src="images/slider/slide5.jpg" alt="Spider-Man 2" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Spider-Man 2</h3>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">4499 ₽</span>
+                        </div>
+                        <a href="#" class="btn btn--primary game-card__link">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            <!-- Индикаторы -->
+            <div class="slider__indicators">
+                <span class="slider__dot slider__dot--active"></span>
+                <span class="slider__dot"></span>
+                <span class="slider__dot"></span>
+                <span class="slider__dot"></span>
+                <span class="slider__dot"></span>
+            </div>
+        </section>
+
+        <!-- Быстрый поиск по жанрам -->
+        <section class="quick-search container" id="search">
+            <h2 class="section-title fade-in">Быстрый поиск</h2>
+            <p style="color: var(--color-text-secondary); margin-bottom: 20px;">Найди свою идеальную игру среди тысяч предложений</p>
+            <form action="catalog.html" class="quick-search__form">
+                <input type="text" placeholder="Введите название игры, жанр или разработчика..." list="genres" class="quick-search__input">
+                <datalist id="genres">
+                    <option value="RPG">
+                    <option value="Шутер">
+                    <option value="Стратегия">
+                    <option value="Гонки">
+                    <option value="Приключения">
+                    <option value="Спорт">
+                    <option value="Хоррор">
+                    <option value="Симулятор">
+                    <option value="MMO">
+                    <option value="Инди">
+                </datalist>
+                <button type="submit" class="btn btn--primary pulse">Найти</button>
+            </form>
+        </section>
+
+        <!-- Инфографика о преимуществах -->
+        <section class="features container">
+            <h2 class="section-title fade-in">Почему выбирают BestGames?</h2>
+            <div class="features__grid">
+                <div class="feature fade-in">
+                    <img src="images/icons/price.svg" alt="Цены" class="feature__icon">
+                    <h4>Привлекательные цены</h4>
+                    <p>Лучшие цены на рынке, ежедневные скидки до 90%</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/sale.svg" alt="Акции" class="feature__icon">
+                    <h4>Ежемесячные акции</h4>
+                    <p>Каждый месяц новые акции и специальные предложения</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/support.svg" alt="Поддержка" class="feature__icon">
+                    <h4>Круглосуточная поддержка</h4>
+                    <p>Мы всегда онлайн и готовы помочь 24/7</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/fast.svg" alt="Быстро" class="feature__icon">
+                    <h4>Быстрая покупка</h4>
+                    <p>Мгновенная доставка ключей после оплаты</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/secure.svg" alt="Безопасно" class="feature__icon">
+                    <h4>Безопасность</h4>
+                    <p>Защищенные платежи и гарантия возврата</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/gift.svg" alt="Подарки" class="feature__icon">
+                    <h4>Подарки</h4>
+                    <p>Дарим бонусы за каждую покупку</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/community.svg" alt="Сообщество" class="feature__icon">
+                    <h4>Большое сообщество</h4>
+                    <p>Более 1 миллиона геймеров выбрали нас</p>
+                </div>
+                <div class="feature fade-in">
+                    <img src="images/icons/price.svg" alt="Кешбэк" class="feature__icon">
+                    <h4>Кешбэк 5%</h4>
+                    <p>Возвращаем часть средств за покупки</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные игры -->
+        <section class="popular container">
+            <h2 class="section-title fade-in">Популярные игры</h2>
+            <div class="popular-grid">
+                <!-- Карточка 1 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <span class="game-card__badge">ТОП 1</span>
+                    <img src="images/games/2.webp" alt="The Witcher 3" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">The Witcher 3: Wild Hunt</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Открытый мир</span>
+                            CD Projekt Red
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">1999 ₽</span>
+                            <span class="game-card__old-price">2999 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 2 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <span class="game-card__badge">ХИТ</span>
+                    <img src="images/games/1.webp" alt="Cyberpunk 2077" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Cyberpunk 2077</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Киберпанк</span>
+                            CD Projekt Red
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2499 ₽</span>
+                            <span class="game-card__old-price">3999 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 3 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <span class="game-card__badge">НОВИНКА</span>
+                    <img src="images/games/3.webp" alt="Starfield" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Starfield</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Космос</span>
+                            Bethesda
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">3999 ₽</span>
+                            <span class="game-card__old-price">4999 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 4 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <span class="game-card__badge">ТОП 5</span>
+                    <img src="images/games/4.webp" alt="Hogwarts Legacy" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Hogwarts Legacy</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">Приключения</span>
+                            <span class="game-card__genre">Фэнтези</span>
+                            Avalanche
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2999 ₽</span>
+                            <span class="game-card__old-price">3999 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 5 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <span class="game-card__badge">СКИДКА</span>
+                    <img src="images/games/5.webp" alt="Diablo IV" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Diablo IV</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Экшен</span>
+                            Blizzard
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2799 ₽</span>
+                            <span class="game-card__old-price">3499 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 6 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <img src="images/games/6.webp" alt="Elden Ring" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Elden Ring</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Souls-like</span>
+                            FromSoftware
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">3299 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 7 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <img src="images/games/7.webp" alt="Baldur's Gate 3" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Baldur's Gate 3</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">RPG</span>
+                            <span class="game-card__genre">Тактика</span>
+                            Larian Studios
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2799 ₽</span>
+                            <span class="game-card__old-price">3599 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 8 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <img src="images/games/8.webp" alt="Spider-Man" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Spider-Man: Miles Morales</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">Экшен</span>
+                            <span class="game-card__genre">Приключения</span>
+                            Insomniac
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">2499 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 9 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <img src="images/games/9.webp" alt="God of War" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">God of War Ragnarök</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">Экшен</span>
+                            <span class="game-card__genre">Приключения</span>
+                            Santa Monica
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">4499 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+                <!-- Карточка 10 -->
+                <article class="game-card fade-in" onclick="window.location.href='catalog.html'">
+                    <img src="images/games/10.webp" alt="Last of Us" class="game-card__image">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">The Last of Us Part I</h3>
+                        <p class="game-card__meta">
+                            <span class="game-card__genre">Экшен</span>
+                            <span class="game-card__genre">Хоррор</span>
+                            Naughty Dog
+                        </p>
+                        <div class="rating">
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                            <span class="rating__star rating__star--filled">★</span>
+                        </div>
+                        <div class="game-card__price-block">
+                            <span class="game-card__price">3299 ₽</span>
+                        </div>
+                        <a href="catalog.html" class="btn btn--primary game-card__link">В каталог</a>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="catalog.html" class="btn btn--secondary btn--large">Смотреть все игры →</a>
+            </div>
+        </section>
+
+        <!-- Наши партнеры -->
+        <section class="partners container">
+            <h2 class="section-title fade-in">Наши партнеры</h2>
+            <div class="partners__grid">
+                <img src="images/partners/nvidia.png" alt="NVIDIA">
+                <img src="images/partners/intel.png" alt="Intel">
+                <img src="images/partners/amd.png" alt="AMD">
+                <img src="images/partners/razer.png" alt="Razer">
+                <img src="images/partners/logitech.png" alt="Logitech">
+                <img src="images/partners/steelseries.png" alt="SteelSeries">
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="container" style="text-align: center; margin: 80px 0;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Готов начать играть?</h2>
+            <p style="color: var(--color-text-secondary); font-size: 1.2rem; margin-bottom: 30px;">Присоединяйся к миллионам геймеров уже сегодня</p>
+            <div class="btn-group" style="justify-content: center;">
+                <a href="auth/register.html" class="btn btn--primary btn--large pulse">Создать аккаунт</a>
+                <a href="catalog.html" class="btn btn--outline btn--large">Перейти в каталог</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <p>📞 Телефон: 8-800-999-55-99</p>
+                    <p>✉️ Email: best@games.ru</p>
+                    <p>📍 Адрес: г. Москва, ул. Игровая, д. 1</p>
+                    <div class="footer__social">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857c-.248-.033-1.099-.107-2.09-.107-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4.5c-1.656 0-3-1.344-3-3V6c0-1.656 1.344-3 3-3h15c1.656 0 3 1.344 3 3v12c0 1.656-1.344 3-3 3h-4.098z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm-1-8c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm5 8h-2v-3c0-.55-.45-1-1-1s-1 .45-1 1v3h-2v-6h2v1.1c.45-.64 1.1-1.1 2-1.1 1.38 0 2.5 1.12 2.5 2.5v3.5z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Безопасность</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="auth/register.html">Регистрация</a></li>
+                        <li><a href="auth/login.html">Авторизация</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="admin.html">Админ панель</a></li>
+                        <li><a href="#search">Поиск</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 BestGames. Все права защищены.
+                    

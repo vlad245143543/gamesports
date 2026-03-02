@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Вход в аккаунт BestGames">
+    <title>BestGames - Вход</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.svg" alt="BestGames" width="200" height="60">
+            </a>
+
+            <div class="theme-switcher">
+                <a href="../index.html" class="theme-btn">🌙 Темная</a>
+                <a href="../themes/light-theme.html" class="theme-btn">☀️ Светлая</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html#search" class="nav__link">Поиск</a></li>
+                    <li><a href="../catalog.html" class="nav__link">Каталог игр</a></li>
+                    <li><a href="../profile.html" class="nav__link">Личный кабинет</a></li>
+                    <li><a href="login.html" class="nav__link nav__link--btn">Войти</a></li>
+                    <li><a href="register.html" class="nav__link nav__link--btn">Регистрация</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="../index.html#search" class="mobile-menu__link">Поиск</a></li>
+            <li class="mobile-menu__item"><a href="../catalog.html" class="mobile-menu__link">Каталог игр</a></li>
+            <li class="mobile-menu__item"><a href="../profile.html" class="mobile-menu__link">Личный кабинет</a></li>
+            <li class="mobile-menu__item"><a href="login.html" class="mobile-menu__link mobile-menu__link--btn">Войти</a></li>
+            <li class="mobile-menu__item"><a href="register.html" class="mobile-menu__link mobile-menu__link--btn">Регистрация</a></li>
+        </ul>
+    </div>
+
+    <main class="auth-page">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h1 class="text-gradient">С возвращением!</h1>
+                <p>Войдите в свой аккаунт</p>
+            </div>
+
+            <form action="../profile.html" method="get">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span>Запомнить меня</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full btn--large">Войти</button>
+
+                <div class="auth-divider">
+                    <span>или</span>
+                </div>
+
+                <div class="auth-links">
+                    <p><a href="#">Забыли пароль?</a></p>
+                    <p>Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <p>📞 Телефон: 8-800-999-55-99</p>
+                    <p>✉️ Email: best@games.ru</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="register.html">Регистрация</a></li>
+                        <li><a href="login.html">Авторизация</a></li>
+                        <li><a href="../profile.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 BestGames. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Бургер меню
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
